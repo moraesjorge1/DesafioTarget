@@ -1,0 +1,13 @@
+int index = 12;
+sum = 0;
+int k = 1;
+
+while (k < index)
+{
+    k++;
+    sum += k;
+}
+
+printf sum;
+
+A soma final é 65 porque sum acumula os valores de k após o incremento, começando de 2 até 12.

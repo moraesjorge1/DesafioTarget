@@ -1,0 +1,38 @@
+Ligar Interruptor 1 por um tempo;
+Desligar Interruptor 1;
+Ligar Interruptor 2;
+Ir até a Sala 1;
+
+Se a lâmpada da Sala 1 estiver acesa então
+    Interruptor 2 pertence à Sala 1;
+    Ir até a Sala 2;
+
+    Se a lâmpada da Sala 2 estiver quente então
+        Interruptor 1 pertence à Sala 2;
+        Interruptor 3 pertence à Sala 3;
+    Caso contrário
+        Interruptor 3 pertence à Sala 2;
+        Interruptor 1 pertence à Sala 3;
+
+Caso contrário
+    Se a lâmpada da Sala 1 estiver quente então
+        Interruptor 1 pertence à Sala 1;
+        Ir até a Sala 2;
+
+        Se a lâmpada da Sala 2 estiver apagada então
+            Interruptor 2 pertence à Sala 3;
+            Interruptor 3 pertence à Sala 2;
+        Caso contrário
+            Interruptor 2 pertence à Sala 2;
+            Interruptor 3 pertence à Sala 3;
+
+    Caso contrário
+        Interruptor 3 pertence à Sala 1;
+        Ir até a Sala 2;
+
+        Se a lâmpada da Sala 2 estiver acesa então
+            Interruptor 2 pertence à Sala 2;
+            Interruptor 1 pertence à Sala 3;
+        Caso contrário
+            Interruptor 2 pertence à Sala 3;
+            Interruptor 1 pertence à Sala 2;
